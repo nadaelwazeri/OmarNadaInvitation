@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Great Vibes", cursive;
+  background-color: #fcfbf9;
+}
+.welcome {
+  background-color: #fcfbf9;
+  color: #c49e77;
+  padding: 0 25px;
+}
+.welcome h1 {
+  font-size: 50px;
+  margin: 75px 0 30px 0;
+}
+.welcome p {
+  font-size: 25px;
+  margin-bottom: 75px;
+  font-family: "Cinzel", serif;
+}
+.count {
+  background-color: #fcfbf9;
+  color: #c49e77;
+  text-align: center;
+  padding: 0 20px;
+}
+.count h1 {
+  font-size: 50px;
+  margin: 30px 0 20px 0;
+}
+.count p {
+  font-size: 25px;
+  font-family: "Cinzel", serif;
+}
+.count .time h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.count .time p {
+  font-size: 30px;
+  font-family: "Great Vibes", cursive;
+}
+.details {
+  background-color: #fcfbf9;
+  color: #c49e77;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+.details h1 {
+  font-size: 45px;
+  margin: 30px 0 50px 0;
+}
+.details h2 {
+  font-size: 50px;
+}
+.details p {
+  font-size: 25px;
+  font-family: "Cinzel", serif;
+}
+/* .details .map{
+width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+
+#venue a {
+  background-color: #c49e77;
+  border: none;
+  font-size: 35px;
+  padding: 10px 25px;
+  margin-top: 15px;
+  border-radius: 25px;
+}
+
+#venue a:hover {
+  background-color: #b88a6c;
+  cursor: pointer;
+}
+
+.cong {
+  background-color: #fcfbf9;
+  color: #c49e77;
+  text-align: center;
+  padding: 0 20px;
+}
+.cong h1 {
+  /* font-size: 50px; */
+  margin: 20px 0 20px 0;
+  font-family: "Cinzel", serif;
+}
+.cong input {
+  font-size: 25px;
+  width: 80%;
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 25px;
+  border: 2px solid #c49e77;
+}
+.cong input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #e3dcdc2b;
+  border-color: #b48c8c;
+}
+.cong textarea {
+  font-size: 25px;
+  padding: 20px 15px;
+  margin: 15px 0;
+  border-radius: 25px;
+  border: 2px solid #c49e77;
+  height: 200px;
+  width: 80%;
+}
+.cong textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #e3dcdc2b;
+  border-color: #b48c8c;
+}
+.cong button {
+  background-color: #c49e77;
+  border: none;
+  font-size: 25px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 25px;
+}
+.cong button:hover {
+  background-color: #b88a6c;
+  cursor: pointer;
+}
+.footer p{
+    font-size: 20px;
+    color: #c49e77;
+    font-family: "Cinzel", serif;
+}
+.footer h1{
+    color: #c49e77;
+    
+}

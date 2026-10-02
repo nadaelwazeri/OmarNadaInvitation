@@ -112,8 +112,6 @@ observer3.observe(section3);
 
 // =======================================================
 
-let form = document.getElementById("wedding-form");
-
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -123,13 +121,18 @@ form.addEventListener("submit", function (e) {
     method: "POST",
     body: formData
   })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success) {
+  .then(async (response) => {
+    let json = await response.json();
+    if (response.status == 200) {
       alert("شكراً لك! تم إرسال تهنئتك بنجاح ❤️");
       form.reset();
     } else {
-      alert("حدث خطأ، يرجى المحاولة مرة أخرى.");
+      console.log(json);
+      alert(json.message || "حدث خطأ أثناء الإرسال.");
     }
+  })
+  .catch(error => {
+    console.error("Network / CORS Error:", error);
+    alert("تعذر الاتصال بالشبكة، يرجى التأكد من الإنترنت أو إيقاف مانع الإعلانات ثم المحاولة.");
   });
 });

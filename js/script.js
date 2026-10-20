@@ -1,3 +1,14 @@
+
+const scrollDown = document.getElementById("scrollDown");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    scrollDown.classList.add("hide");
+  } else {
+    scrollDown.classList.remove("hide");
+  }
+});
+// ========================================================
 const targetDate = new Date("October 30, 2026 00:00:00").getTime();
 
 const countdown = setInterval(() => {
